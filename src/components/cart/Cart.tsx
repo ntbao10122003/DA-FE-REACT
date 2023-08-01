@@ -35,7 +35,7 @@ const Cart = () => {
                     <button type="button" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900  border border-gray-200 rounded-lg hover:bg-blue-500 hover:text-white ">Cập nhập</button>
                 </div>
                 <div className="">
-                    <a href="form-buy-cart.html"><button type="button" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900  border border-gray-200 rounded-lg hover:bg-blue-500 hover:text-white ">Thanh Toán</button></a>
+                    <a href="product/payment"><button type="button" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900  border border-gray-200 rounded-lg hover:bg-blue-500 hover:text-white ">Thanh Toán</button></a>
                 </div>
             
             </div>

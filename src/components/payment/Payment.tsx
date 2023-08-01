@@ -17,16 +17,16 @@ const Payment = () => {
         </div>
 
         <div className="form-buy pt-3" style={{ paddingBottom: '10%' }}>
-          <form action="" className="test-form border-b border-gray-300 pb-10">
+        <form action="" className="test-form border-b border-gray-300 pb-10">
             <input className="" type="text" placeholder="Họ và tên" style={{ width: width_1 }} />
-            <input type="text" placeholder="Họ và tên" style={{ width: width_2 }} />
-            <input type="text" placeholder="Họ và tên" style={{ width: width_6 }} />
-            <input type="text" placeholder="Họ và tên" style={{ width: width_1 }} />
-            <input className="address" type="text" placeholder="Họ và tên" style={{ width: width_4 }} />
-            <input type="text" placeholder="Họ và tên" style={{ width: width_5 }} /><br />
+            <input type="text" placeholder="Số điện thoại" style={{ width: width_2 }} />
+            <input type="text" placeholder="Địa chỉ" style={{ width: width_6 }} />
+            <input type="text" placeholder="Thành phố" style={{ width: width_1 }} />
+            <input className="address" type="text" placeholder="Quận/Huyện" style={{ width: width_4 }} />
+            <input type="text" placeholder="Mã bưu điện" style={{ width: width_5 }} /><br />
             <div className="itm-cart pt-6 flex items-center justify-between" style={{ height: '30%', width: '90%' }}>
-              <a className="text-sm font-medium text-blue-500" href="">Giỏ hàng </a>
-              <button type="button" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-white bg-blue-700  border border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white ">Tiếp tục đến phương thức thanh toán </button>
+              <a className="text-sm font-medium text-blue-500" href="">Giỏ hàng</a>
+              <button type="button" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-white bg-blue-700  border border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white">Tiếp tục đến phương thức thanh toán</button>
             </div>
           </form>
           <div className="content-buy-cart flex justify-center mt-3">

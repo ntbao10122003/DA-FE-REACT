@@ -11,15 +11,15 @@ const Header = () => {
                      <input className="input-search border border-black-900 w-80 h-8 rounded" type="text" placeholder="search"/>
                      <button className="button-search font-bold">Tìm kiếm |</button>
                     </div>
-                    <div className="cart font-bold"><a href="cart.html"> <i className="fa-solid fa-cart-shopping"></i> Giỏ hàng </a></div>
+                    <div className="cart font-bold"><a href="cart"> <i className="fa-solid fa-cart-shopping"></i> Giỏ hàng </a></div>
                 </div>
             </div>
         </div>
         <div className="menu flex justify-center font-bold">
            <ul>
-            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="/">Trang Chủ</a></li>
             <li>
-                <a href="detail.html">Sản Phẩm <i className="fa-solid fa-arrow-down"></i> </a>
+                <a href="product">Sản Phẩm <i className="fa-solid fa-arrow-down"></i> </a>
                 <ul className="dropdown">
                 <li className="text">
                     <a href="">IPhone</a>
