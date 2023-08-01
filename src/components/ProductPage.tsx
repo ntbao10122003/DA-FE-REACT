@@ -4,6 +4,7 @@ const ProductPage = () => {
     const width_2 = '27%';
     const width_3 = '68%';
   return (
+    
     <div className="main w-full py-6">
     <div className="main-container">
         <div className="large ">
