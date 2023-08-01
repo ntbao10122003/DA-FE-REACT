@@ -1,10 +1,12 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-type Props = {}
-
-const AdminLayoits = (props: Props) => {
+const AdminLayoits = () => {
   return (
-    <div>AdminLayoits</div>
+    <div style={{display: 'flex'}}>
+      <aside>Menu</aside>
+      <main>< Outlet/></main>
+    </div>
+
   )
 }
 
