@@ -48,8 +48,7 @@ const ListProducts = () => {
         },
     ];
     return (
-        <div>
-            <h1>Products Management</h1>
+        <div style={{ width: '82vw'}}>
             <Table columns={columns} dataSource={data} />
         </div>
     )
