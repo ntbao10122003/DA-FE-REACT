@@ -1,15 +1,11 @@
 import "react-loading-skeleton/dist/skeleton.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HomePage from "./components/HomePage";
-
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 function App() {
     return (
         <div>
-           <Header/>
-           <HomePage/>
-           <Footer/>
+          <RouterProvider router={router}/>
         </div>
     );
 }
