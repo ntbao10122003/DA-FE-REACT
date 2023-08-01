@@ -9,7 +9,6 @@ const ListProducts = () => {
             title: 'Name',
             dataIndex: 'name',
             key: 'name',
-            //   render: (text) => <a>{text}</a>,
         },
         {
             title: 'Price',
@@ -17,9 +16,9 @@ const ListProducts = () => {
             key: 'price',
         },
         {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
+            title: 'Image',
+            dataIndex: 'image',
+            key: 'image',
         },
         {
             title: 'Action',
@@ -39,13 +38,13 @@ const ListProducts = () => {
             key: '1',
             name: 'Product 1',
             price: 10,
-            address: 'Address 1',
+            image: 'Address 1',
         },
         {
             key: '2',
             name: 'Product 2',
             price: 20,
-            address: 'Address 2',
+            image: 'Address 2',
         },
     ];
     return (

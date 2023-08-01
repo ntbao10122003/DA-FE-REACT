@@ -4,7 +4,7 @@ const AdminLayoits = () => {
   return (
     <div style={{display: 'flex'}}>
       <aside>Menu</aside>
-      <main>< Outlet/></main>
+      <main><Outlet /></main>
     </div>
 
   )
