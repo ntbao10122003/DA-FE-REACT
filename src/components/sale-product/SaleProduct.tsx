@@ -15,7 +15,7 @@ const SaleProduct = () => {
                 </span>
             </div>
             <div className="slider flex pb-20">
-                <div className="fix-slider scale-100 hover:scale-90 delay-2000 animate-spin" style={{width: width_2}}>
+                <div className="fix-slider " style={{width: width_2}}>
                     <img src="/src/assets/img/slide2-1.jpg" alt=""/>
                 </div>
                 <div className="box-slider flex text-center" style={{width: width_3}}>

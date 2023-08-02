@@ -48,7 +48,7 @@ const NewProduct = () => {
                         <span className="text-red-500">2,500,000₫</span>
                     </div>
                 </div>
-                <div className="fix-slider scale-100 hover:scale-90 delay-2000 animate-spin" style={{width: width_2}}>
+                <div className="fix-slider" style={{width: width_2}}>
                     <img src="/src/assets/img/slider1.jpg" alt=""/>
                 </div>
 

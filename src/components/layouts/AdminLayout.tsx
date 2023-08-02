@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import MenuAdmin from '../admin/MenuAdmin'
 
-const AdminLayoits = () => {
+const AdminLayouts = () => {
   return (
     <div style={{ width: '100%' }}>
       <div style={{ display: 'flex', width: '100%' }}>
@@ -13,4 +13,4 @@ const AdminLayoits = () => {
 };
 
 
-export default AdminLayoits
+export default AdminLayouts

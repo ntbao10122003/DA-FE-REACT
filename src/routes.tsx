@@ -5,8 +5,8 @@ import ProductPage from "./components/product-page/ProductPage";
 import ProductDetailPage from "./components/product-detail/ProductDetailPage";
 import Cart from "./components/cart/Cart";
 import Payment from "./components/payment/Payment";
-import AdminLayoits from "./components/layouts/AdminLayoits";
 import ListProducts from "./components/admin/ListProducts";
+import AdminLayouts from "./components/layouts/AdminLayout";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "/admin",
-        element: <AdminLayoits />,
+        element: <AdminLayouts />,
         children: [
             { index: true, element: <ListProducts /> },
         ]
