@@ -23,6 +23,14 @@
       "lastName": "bảo",
       "confirmPassword": "123456",
       "id": 5
+    },
+    {
+      "email": "nam@gmail.com",
+      "password": "$2a$10$nC6Q6H765YOn0KDRhi2gkelMmFQkbtdg.OFMLrjC/0e9ApmSgdhly",
+      "firstName": "Nguyen",
+      "lastName": "Nam",
+      "confirmPassword": "123456",
+      "id": 6
     }
   ]
 }
