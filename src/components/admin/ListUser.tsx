@@ -50,6 +50,13 @@ const ListUser = () => {
             phone: '012345679',
             address: 'Address 2',
         },
+        {
+            key: '3',
+            name: 'User 3',
+            email: '3@gmail.com',
+            phone: '012345670',
+            address: 'Address 3',
+        },
     ];
     return (
         <div style={{ width: '82vw'}}>
