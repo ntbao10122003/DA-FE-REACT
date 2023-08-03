@@ -1,1 +1,28 @@
-{}
+{
+  "users": [
+    {
+      "email": "nguyenthebao17112@gmail.com",
+      "password": "$2a$10$z2bjZQ/9Y69/w2WFmrnM8ee/DICR/H/INlwzlDU18QPKYte60MZca",
+      "firstName": "nguyễn thế",
+      "lastName": "bảo",
+      "confirmPassword": "123456",
+      "id": 3
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$9M97u2pKqrlXD5mVgfI1DeUmVf8695DJYFTfmTNrOA.cXeBHZ5VXO",
+      "firstName": "nguyễn thế",
+      "lastName": "bảo",
+      "confirmPassword": "123456",
+      "id": 4
+    },
+    {
+      "email": "baontph21353@fpt.edu.vn",
+      "password": "$2a$10$Wjt/pvijk/qStku6k0tknO81BYU0pOBi3msdSH3Or8HD7q4cxZEx2",
+      "firstName": "nguyễn thế",
+      "lastName": "bảo",
+      "confirmPassword": "123456",
+      "id": 5
+    }
+  ]
+}
