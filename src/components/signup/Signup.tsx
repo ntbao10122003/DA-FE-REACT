@@ -22,15 +22,15 @@ const Signup = () => {
   }
   return (
       <>
-                            <h1>signup</h1>
+    <h1 className="text-center">signup</h1>
       <section className="bg-white">
-          <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
+          <div className="">
           
               <main
                   aria-label="Main"
                   className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6"
               >
-                  <div className="max-w-xl lg:max-w-3xl">
+                  <div className="max-w-xl lg:max-w-3xl border border-indigo-600 box-signup rounded">
                       <div className="relative -mt-16 block lg:hidden">
                           
 
@@ -56,7 +56,7 @@ const Signup = () => {
                               </label>
 
                               <input
-                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm border border-red-600"
                                   {...register('firstName')}
                               />
                                 <p className='text-red-600 text-[10px]'>
@@ -73,7 +73,7 @@ const Signup = () => {
                               </label>
 
                               <input
-                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm border border-red-600"
                                   {...register('lastName')}
                               
                               />
@@ -88,7 +88,7 @@ const Signup = () => {
                               </label>
 
                               <input
-                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm border border-red-600"
                                   {...register('email')}
                               />
                                 <p className='text-red-600 text-[10px]'>
@@ -106,7 +106,7 @@ const Signup = () => {
 
                               <input
                                   type="password"
-                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm border border-red-600"
                                   {...register('password')}
                               />
                                 <p className='text-red-600 text-[10px]'>
@@ -124,7 +124,7 @@ const Signup = () => {
 
                               <input
                                   type="password"
-                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm border border-red-600"
                                   {...register('confirmPassword')}
                               />
                               <p className='text-red-600 text-[10px]'>
@@ -166,7 +166,7 @@ const Signup = () => {
                                   Create an account
                               </button>
 
-                              <p className="mt-4 text-sm text-gray-500 sm:mt-0">
+                              <p className="mt-4 text-sm text-gray-500 sm:mt-0 pl-10">
                                   Already have an account?
                                   <a href="#" className="text-gray-700 underline">Log in</a>.
                               </p>
