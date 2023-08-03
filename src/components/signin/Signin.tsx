@@ -29,8 +29,7 @@ const onSubmit = async(data : SigninForm) => {
     }
 }
   return (
-    <div>
-   <h1>signin</h1>
+    <div className="container">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-lg text-center">
                 <h1 className="text-2xl font-bold sm:text-3xl">Đăng nhập</h1>
