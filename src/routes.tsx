@@ -9,6 +9,9 @@ import ListProducts from "./components/admin/ListProducts";
 import AdminLayouts from "./components/layouts/AdminLayout";
 import Signup from "./components/signup/Signup";
 import Signin from "./components/signin/Signin";
+import Categories from "./components/admin/Catesories";
+import ListUser from "./components/admin/ListUser";
+import CartList from "./components/admin/CartList";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +27,12 @@ export const router = createBrowserRouter([
   {
     path: "/admin",
     element: <AdminLayouts />,
-    children: [{ index: true, element: <ListProducts /> }],
+    children: [
+        { index: true, element: <ListProducts /> },
+        { path: "category", element: <Categories />},
+        { path: "user", element: <ListUser />},
+        { path: "cart", element: <CartList />}
+    ],
   },
   {
     path: "signup",
