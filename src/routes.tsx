@@ -5,13 +5,11 @@ import ProductPage from "./components/product-page/ProductPage";
 import ProductDetailPage from "./components/product-detail/ProductDetailPage";
 import Cart from "./components/cart/Cart";
 import Payment from "./components/payment/Payment";
-import ListProducts from "./components/admin/ListProducts";
-import AdminLayouts from "./components/layouts/AdminLayout";
 import Signup from "./components/signup/Signup";
 import Signin from "./components/signin/Signin";
-import Categories from "./components/admin/Catesories";
-import ListUser from "./components/admin/ListUser";
-import CartList from "./components/admin/CartList";
+import LayoutAdmin from "./components/layouts/AdminLayout";
+import ProductList from "./components/admin/ProductList";
+import ProductAdd from "./components/admin/ProductAdd";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -24,16 +22,30 @@ export const router = createBrowserRouter([
       { path: "product/payment", element: <Payment /> },
     ],
   },
-  {
-    path: "/admin",
-    element: <AdminLayouts />,
-    children: [
-        { index: true, element: <ListProducts /> },
-        { path: "category", element: <Categories />},
-        { path: "user", element: <ListUser />},
-        { path: "cart", element: <CartList />}
-    ],
-  },
+    {
+        path: "/admin",
+        element: <LayoutAdmin />,
+        children: [
+            { index: true, element: <Navigate to="dashboard" /> },
+            {
+                path: "dashboard",
+                element: <h2 className="font-bold text-2xl">Thống kê</h2>,
+            },
+            {
+                path: "product",
+                element: <ProductList />,
+            },
+            {
+                path: "product/add",
+                element: <ProductAdd />,
+            },
+            // {
+            //     path: "product/:idProduct/edit",
+            //     element: <AdminProductEdit />,
+            // },
+        ],
+    },
+  
   {
     path: "signup",
     element: <Signup />,

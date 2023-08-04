@@ -1,33 +1,46 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { Action, ThunkAction, combineReducers, configureStore } from '@reduxjs/toolkit';
 import {
-  persistStore,
-  persistReducer,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
+    FLUSH,
+    PAUSE,
+    PERSIST,
+    PURGE,
+    REGISTER,
+    REHYDRATE,
+    persistReducer,
+    persistStore,
 } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'
-import rootReducer from './rootReducer';
+import storage from 'redux-persist/lib/storage';
+import productApi, { productReducer } from '../api/product';
+
 
 const persistConfig = {
-  key: 'root',
-  storage,
-  blacklist: ['product', 'counter']
+    key: 'root',
+    storage,
+    whitelist: ['cart']
 }
+const rootReducer = combineReducers({
+    products: productReducer,
+})
+
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
-
 export const store = configureStore({
-  reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
-});
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            serializableCheck: {
+                ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+            },
+        })
+        .concat(productApi.middleware),
+})
 
-export default persistStore(store)
+export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>
+export type AppThunk<ReturnType = void> = ThunkAction<
+    ReturnType,
+    RootState,
+    unknown,
+    Action<string>
+>
+export default persistStore(store);

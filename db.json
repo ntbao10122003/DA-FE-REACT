@@ -7,30 +7,22 @@
       "lastName": "bảo",
       "confirmPassword": "123456",
       "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "hsfhfs",
+      "brand": "hfhfshfs",
+      "desc": "hfshsfhfsh",
+      "price": "5336536",
+      "id": 1
     },
     {
-      "email": "test@gmail.com",
-      "password": "$2a$10$9M97u2pKqrlXD5mVgfI1DeUmVf8695DJYFTfmTNrOA.cXeBHZ5VXO",
-      "firstName": "nguyễn thế",
-      "lastName": "bảo",
-      "confirmPassword": "123456",
-      "id": 4
-    },
-    {
-      "email": "baontph21353@fpt.edu.vn",
-      "password": "$2a$10$Wjt/pvijk/qStku6k0tknO81BYU0pOBi3msdSH3Or8HD7q4cxZEx2",
-      "firstName": "nguyễn thế",
-      "lastName": "bảo",
-      "confirmPassword": "123456",
-      "id": 5
-    },
-    {
-      "email": "nam@gmail.com",
-      "password": "$2a$10$nC6Q6H765YOn0KDRhi2gkelMmFQkbtdg.OFMLrjC/0e9ApmSgdhly",
-      "firstName": "Nguyen",
-      "lastName": "Nam",
-      "confirmPassword": "123456",
-      "id": 6
+      "name": "dfhfhdh",
+      "brand": "hdhdfhd",
+      "desc": "hhehed",
+      "price": "6523646",
+      "id": 2
     }
   ]
 }

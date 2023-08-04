@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { signin } from "../../../src/api/auth";
 import { useLocalStorage } from "../../../src/hook";
+import { yupResolver } from '@hookform/resolvers/yup';
 const Signin = () => {
   const {register , handleSubmit , formState: {errors}} = useForm<SigninForm>({
+    resolver: yupResolver(signinSchema)
 })
 const navigate = useNavigate();
 
@@ -32,7 +34,7 @@ const onSubmit = async(data : SigninForm) => {
     <div className="container">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-lg text-center">
-                <h1 className="text-2xl font-bold sm:text-3xl">Đăng nhập</h1>
+                <h1 className="text-2xl font-bold sm:text-3xl">Login</h1>
 
             </div>
 
@@ -116,7 +118,7 @@ const onSubmit = async(data : SigninForm) => {
                 <div className="flex items-center justify-between">
                     <p className="text-sm text-gray-500">
                         No account?
-                        <a className="underline" href="">Sign up</a>
+                        <a className="underline" href="signup">Sign up</a>
                     </p>
 
                     <button
