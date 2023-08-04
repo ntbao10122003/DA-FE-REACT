@@ -23,6 +23,13 @@
       "desc": "hhehed",
       "price": "6523646",
       "id": 2
+    },
+    {
+      "name": "apple watch",
+      "brand": "apple",
+      "desc": "đẹp lắm",
+      "price": "2000000",
+      "id": 3
     }
   ]
 }
