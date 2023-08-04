@@ -2,9 +2,11 @@ import { SignupForm, signupSchema } from "../../interface/auth/auth";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { signup } from "../../../src/api/auth";
+import { yupResolver } from '@hookform/resolvers/yup';
 
 const Signup = () => {
   const {register , handleSubmit , formState: {errors}} = useForm<SignupForm>({
+    resolver: yupResolver(signupSchema)
   })
 
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ const Signup = () => {
   }
   return (
       <>
-    <h1 className="text-center">signup</h1>
+    <h1 className="text-center">Sign Up</h1>
       <section className="bg-white">
           <div className="">
           
@@ -168,7 +170,7 @@ const Signup = () => {
 
                               <p className="mt-4 text-sm text-gray-500 sm:mt-0 pl-10">
                                   Already have an account?
-                                  <a href="#" className="text-gray-700 underline">Log in</a>.
+                                  <a href="signin" className="text-gray-700 underline">Log in</a>.
                               </p>
                           </div>
                       </form>
