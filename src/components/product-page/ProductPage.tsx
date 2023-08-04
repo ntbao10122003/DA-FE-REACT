@@ -27,7 +27,7 @@ const ProductPage = () => {
           {products.map((product) => (
             <div key={product.id} className="box text-center border border-danger-500 pt-6" style={{ width: width_1 }}>
               <img className="m-auto" src="/src/assets/img/sp1.jpg" alt="" width="90%" />
-              <a className="block mt-6 mb-3 font-medium" href="">
+              <a className="block mt-6 mb-3 font-medium" href="product/:id">
                 {product.name}
               </a>
               <span className="price font-medium text-red-500 ">{product.price}₫</span>
