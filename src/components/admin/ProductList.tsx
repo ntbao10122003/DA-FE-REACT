@@ -56,10 +56,10 @@ const ProductList = (props: Props) => {
                         okText="Có"
                         cancelText="Không"
                     >
-                        <Button danger>Xóa</Button>
+                        <Button danger >Xóa</Button>
                     </Popconfirm>
-                    <Button type="primary" danger className="ml-2">
-                        <Link to={`/admin/product/${record.key}/edit`}>Sửa</Link>
+                    <Button type="primary" className="ml-2 bg-blue-600 text-white hover:bg-blue-600 ">
+                        <Link to={`/admin/product/${record.key}/edit`} >Sửa</Link>
                     </Button>
                 </div>
             ),
@@ -70,7 +70,7 @@ const ProductList = (props: Props) => {
         <div>
             <header className="flex items-center justify-between mb-4">
                 <h2 className="font-bold text-2xl">Quản lý sản phẩm</h2>
-                <Button type="primary" danger>
+                <Button type="primary" className="bg-blue-600 hover:bg-blue-700">
                     <Link to="/admin/product/add">Thêm sản phẩm</Link>
                 </Button>
             </header>

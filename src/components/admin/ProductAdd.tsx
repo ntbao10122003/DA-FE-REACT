@@ -38,7 +38,7 @@ const ProductAdd = () => {
     return (
         <>
             <header className="mb-4">
-                <h2 className="font-bold text-2xl">Thêm sản phẩm</h2>
+                <h2 className="font-bold text-2xl ">Thêm sản phẩm</h2>
             </header>
             {contextHolder}
 
@@ -90,7 +90,7 @@ const ProductAdd = () => {
                 </Form.Item>
 
                 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                    <Button type="primary" danger htmlType="submit">
+                    <Button type="primary"  htmlType="submit" className="bg-blue-600 hover:bg-blue-600">
                         {isAddLoading ? (
                             <AiOutlineLoading3Quarters className="animate-spin" />
                         ) : (
