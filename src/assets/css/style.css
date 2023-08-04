@@ -21,9 +21,7 @@ ul li ul.dropdown {
 }
 ul li a:hover {
     width: 100%;
-    background: white;
-    color: black;
-
+    color: white;
 }
 ul li:hover ul.dropdown {
     display: block;
