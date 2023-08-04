@@ -210,3 +210,18 @@ ul li:hover ul.dropdown {
     position: relative;
 }
 
+.ant-popconfirm .ant-popconfirm-buttons button {
+    margin-inline-start: 8px;
+    border: 1px solid black;
+}
+.ant-popconfirm-inner-content span {
+    color: black;
+}
+.ant-btn-primary.ant-btn-dangerous {
+    background: #1677FF;
+    box-shadow: 0 2px 0 rgba(255, 38, 5, 0.06);
+}
+:where(.css-dev-only-do-not-override-1w4v3hc).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    background-color: #4096ff;
+}
