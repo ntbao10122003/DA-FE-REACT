@@ -10,6 +10,7 @@ import Signin from "./components/signin/Signin";
 import LayoutAdmin from "./components/layouts/AdminLayout";
 import ProductList from "./components/admin/ProductList";
 import ProductAdd from "./components/admin/ProductAdd";
+import ProductEdit from "./components/admin/ProductEdit";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
                 path: "product/add",
                 element: <ProductAdd />,
             },
+            {
+              path: "product/:idProduct/edit",
+              element: <ProductEdit />,
+          },
             // {
             //     path: "product/:idProduct/edit",
             //     element: <AdminProductEdit />,
