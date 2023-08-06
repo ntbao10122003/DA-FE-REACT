@@ -97,6 +97,7 @@ const ProductAdd = () => {
                             "Thêm"
                         )}
                     </Button>
+                    <Button type="primary" className="ml-2" danger onClick={ () => navigate("/admin/product")} >Quay lại</Button>
                 </Form.Item>
             </Form>
         </>

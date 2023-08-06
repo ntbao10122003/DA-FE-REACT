@@ -1,6 +1,6 @@
 import { Button, Form, Input, Skeleton, message } from "antd";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { useNavigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import {
   useAddProductMutation,
   useGetProductByIdQuery,
@@ -118,6 +118,7 @@ const ProductEdit = () => {
                 "Cập nhật"
               )}
             </Button>
+            <Button type="primary" className="ml-2" danger onClick={ () => navigate("/admin/product")} >Quay lại</Button>
           </Form.Item>
         </Form>
       )}
