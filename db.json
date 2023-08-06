@@ -7,6 +7,14 @@
       "lastName": "bảo",
       "confirmPassword": "123456",
       "id": 3
+    },
+    {
+      "email": "nam2@gmail.com",
+      "password": "$2a$10$fUqJF9WspxySmbdMXobrvOZEzxtn5xBVu2qydTjaLX/msrkzbjlGS",
+      "firstName": "Nguyen Hoai",
+      "lastName": "Nam",
+      "confirmPassword": "12345678",
+      "id": 4
     }
   ],
   "products": [
@@ -24,5 +32,6 @@
       "price": "2000000",
       "id": 3
     }
-  ]
+  ],
+  "cart": []
 }
