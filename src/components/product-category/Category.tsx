@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useGetProductsQuery } from '../../api/product'; // Update this path to the location of your product API
 
 const Category = () => {
@@ -51,9 +52,9 @@ const Category = () => {
               {products.map((product) => (
                 <div key={product.id} className="box text-center border border-danger-500 pt-6" style={{ width: width_1 }}>
                   <img className="m-auto" src="/src/assets/img/sp1.jpg" alt="" width="90%" />
-                  <a className="block mt-6 mb-3 font-medium" href="">
-                    {product.name}
-                  </a>
+                  <Link to={`/product/${product.id}`} className="block mt-6 mb-3 font-medium">
+                {product.name}
+              </Link>
                   <span className="price font-medium text-red-500 ">{product.price}₫</span>
                 </div>
               ))}

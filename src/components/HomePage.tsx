@@ -7,10 +7,10 @@ import SaleProduct from "./sale-product/SaleProduct"
 const HomePage = () => {
   return (
     <div>
-        <Partner/>,
-        <Category/>,
-        <NewProduct/>,
-        <SaleProduct/>,
+        <Partner/>
+        <Category/>
+        <NewProduct/>
+        <SaleProduct/>
         <News/>
     </div>
   )
