@@ -225,3 +225,7 @@ ul li:hover ul.dropdown {
     color: #fff;
     background-color: #4096ff;
 }
+.cart.font-bold.flex-1 {
+    display: flex;
+    align-items: center;
+}

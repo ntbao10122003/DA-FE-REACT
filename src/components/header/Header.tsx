@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
-
+import { Navigate, useNavigate } from "react-router-dom";
+import { Button } from 'antd';
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <div className="container-nav">
@@ -13,10 +15,13 @@ const Header = () => {
                                 <input className="input-search border border-black-900 w-80 h-8 rounded" type="text" placeholder="search" />
                                 <button className="button-search font-bold">Tìm kiếm |</button>
                             </div>
-                            <div className="cart font-bold">
+                            <div className="cart font-bold flex-1">
                                 <Link to={'/cart'} className="block mt-6 mb-3 font-medium">
                                     <i className="fa-solid fa-cart-shopping"></i> Giỏ hàng
                                 </Link>
+                                <Button type="primary" className="ml-2" danger onClick={ () => navigate("/signup")} >Đăng Ký</Button>
+                                <Button type="primary" className="ml-2" danger onClick={ () => navigate("/signin")} >Đăng Nhập</Button>
+
                             </div>
                         </div>
                     </div>
