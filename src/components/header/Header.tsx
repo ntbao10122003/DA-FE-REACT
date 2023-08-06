@@ -1,19 +1,25 @@
 import { Link } from 'react-router-dom'
 import { Navigate, useNavigate } from "react-router-dom";
 import { Button } from 'antd';
+import { useState } from 'react';
+import {search} from "../header/search"
 const Header = () => {
+   
+    const { searchText, handleInputChange, handleSearch } = search();
+
     const navigate = useNavigate();
     return (
         <div>
             <div className="container-nav">
                 <div className="nav bg-white-300  pl-40 pr-40">
-                    <div className="container flex justify-between items-center">
+                    <div className="container flex items-center">
                         {/* <div className="hotel font-bold"> Hotline : 0988252613</div> */}
                         <div className="logo"> <img src="/src/assets/img/2035342283933.png" alt="" width="150" /></div>
                         <div className="seaarch flex">
                             <div className="hover">
-                                <input className="input-search border border-black-900 w-80 h-8 rounded" type="text" placeholder="search" />
-                                <button className="button-search font-bold">Tìm kiếm |</button>
+                                <input className="input-search border border-black-900 w-80 h-8 rounded" type="text" placeholder="search"  value={searchText}
+        onChange={handleInputChange} />
+                                <button className="button-search font-bold" onClick={handleSearch} >Tìm kiếm |</button>
                             </div>
                             <div className="cart font-bold flex-1">
                                 <Link to={'/cart'} className="block mt-6 mb-3 font-medium">

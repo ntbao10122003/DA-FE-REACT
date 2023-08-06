@@ -39,13 +39,28 @@ ul li:hover ul.dropdown {
     opacity: 1;
     transition: 0.5s;
 } */
-
 .hover:hover .input-search {
     opacity: 1;
+    margin-right: 27%;
     transition: 0.3s;
+    margin-top: 4px;
     box-shadow: 3px 3px 2px#343030;
 }
-
+.hover {
+    margin-top: 9px;
+}
+.content.pt-24 {
+    display: none;
+}
+.menu ul li:hover a {
+    color: black;
+}
+.nav .container {
+    justify-content: space-around;
+}
+.content-footer {
+    justify-content: space-around;
+}
 /* footer */
 
 .footer {

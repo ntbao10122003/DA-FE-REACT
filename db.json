@@ -31,6 +31,13 @@
       "desc": "đẹp lắm",
       "price": "2000000",
       "id": 3
+    },
+    {
+      "name": "iphone",
+      "brand": "iphone",
+      "desc": "Vấn đề trong đoạn mã bạn cung cấp là việc bạn đã viết hàm search nhưng không có cách nào để sử dụng nó trong giao diện người dùng. Để sử dụng hàm search, bạn cần export nó ra và import vào component nào mà bạn muốn sử dụng.  Dưới đây là cách bạn có thể sửa đoạn mã để sử dụng hàm search trong component:  Trong tệp \"Header.js\":  jsx Bằng cách sử dụng hàm search trong component \"Header\", bạn có thể lấy các biến và hàm liên quan tới tìm kiếm và sử dụng chúng trong giao diện người dùng. Như vậy, bạn đã tạo một module riêng biệt để xử lý tìm kiếm và sử dụng nó trong các component khác nhau của ứng dụng React của bạn.",
+      "price": "2000034",
+      "id": 4
     }
   ],
   "cart": []

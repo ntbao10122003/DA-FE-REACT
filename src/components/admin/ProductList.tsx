@@ -11,7 +11,6 @@ const ProductList = (props: Props) => {
     const [messageApi, contextHolder] = message.useMessage();
 
     const [searchQuery, setSearchQuery] = useState<string>("");
-
     const handleSearch = (value: string) => {
         setSearchQuery(value);
     };
